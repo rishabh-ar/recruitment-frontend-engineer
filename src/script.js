@@ -28,9 +28,9 @@ listener.onmessage = function(event) {
 			} else {
 				var price = parseFloat(input[i][1]);
 				if (price < previousTickerPrice[input[i][0]]) {
-					tableRow.setAttribute("style", "background-color:#FF0000;"); 
+					tableRow.setAttribute("class", "table-danger"); 
 				} else {		
-					tableRow.setAttribute("style", "background-color:#90EE90;"); 
+					tableRow.setAttribute("class", "table-success"); 
 				}
 				previousTickerPrice[input[i][0]] = price;
 			}
