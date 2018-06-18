@@ -23,17 +23,15 @@ listener.onmessage = function(event) {
 			tableRow.appendChild(tableData2); 
 			tableRow.appendChild(tableData3);
 			tableRow.appendChild(tableData4);
-			if (previousTickerPrice[input[i][0]] == null) {
-				previousTickerPrice[input[i][0]] = parseFloat(input[i][1]);
-			} else {
-				var price = parseFloat(input[i][1]);
+			var price = parseFloat(input[i][1]);
+			if (previousTickerPrice[input[i][0]] != null) {
 				if (price < previousTickerPrice[input[i][0]]) {
 					tableRow.setAttribute("class", "table-danger"); 
 				} else {		
 					tableRow.setAttribute("class", "table-success"); 
 				}
-				previousTickerPrice[input[i][0]] = price;
 			}
+			previousTickerPrice[input[i][0]] = price;
 			tableBody.appendChild(tableRow);
 			entryIndex += 1; 
 		}
