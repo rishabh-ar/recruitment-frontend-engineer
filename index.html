@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 	<meta charset="UTF-8">
 	<title>Live Stocks</title>
@@ -7,27 +7,23 @@
 	<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">
 </head>
 <body>
-	<center>
-		<h1 class="container jumbotron">Live Stocks</h1>
-	</center>
+	<h1 class="container jumbotron">Live Stocks</h1>
 	
-	<center>
-		<table class = "table table-bordered table-hover table-responsive" width=70%>
-  			<thead class = "thead-dark">
-    			<tr>
-      				<th scope="col">#</th>
-      				<th scope="col">Ticker</th>
-      				<th scope="col">Price</th>
-   	 				<th scope="col">Last Updated</th>
-   	 			</tr>
-  			</thead>
-  			
-  			<tbody id = "stock">
-  			</tbody>
-		
-		</table>
-	</center>
-
-	<script type = "text/javascript" src = "script.js"></script>
+	<table class = "table table-bordered table-hover">
+		<thead class = "thead-dark">
+			<tr>
+  				<th scope="col">#</th>
+  				<th scope="col">Ticker</th>
+  				<th scope="col">Price</th>
+	 				<th scope="col">Last Updated</th>
+	 			</tr>
+		</thead>
+			
+		<tbody id = "stock">
+		</tbody>
+	
+	</table>
+	
+	<script src = "script.js"></script>
 </body>
 </html>
