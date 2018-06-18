@@ -34,16 +34,13 @@ function updateTime(node, currTime) {
 	}
 }
 
-var itr = 0; 
-
 listener.onmessage = function(event) {	
 	var input = JSON.parse(event.data);	
 	if (input.length) {
-		itr += 1;
 		var arrayLength = input.length; 
 		for(var i = 0; i < arrayLength; i++) {
 			var price = parseFloat(input[i][1]);
-			price = Number(price.toFixed(2));
+			price = Number(price.toFixed(2));	
 			if (previousTickerPrice[input[i][0]] != null) {
 				if (price < previousTickerPrice[input[i][0]]) {
 					rowElements[input[i][0]].setAttribute("class", "table-danger"); 
