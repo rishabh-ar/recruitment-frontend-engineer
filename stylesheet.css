@@ -1,4 +1,41 @@
+.background img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  size: 100%;
+}
+
+body {
+  opacity: 0.8;
+}
 
 .customTable {
+	font-weight: bold !important; 
 	width: 70% !important;
+}
+
+tr:hover {
+	background-color: #000066;
+	color: white;  
+}
+
+div.transbox {
+	margin-top: 3%; 
+	margin-left: 0%;
+	margin-bottom: 2%; 
+	width: 30%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox h1 {
+	text-shadow: 1px 2px;
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
