@@ -1,12 +1,12 @@
 body {
    background-image: url("background3.jpg");
-   background-color: #cccccc;
+   background-color: Cyan;
    background-size: 100%;
-   opacity: 0.8;
+   opacity: 0.9;
 }
 
 .customTable {
-	font-weight: bold; 
+	font-weight: bold !important; 
 	width: 70% !important;
 }
 
@@ -28,7 +28,7 @@ div.transbox {
 
 div.transbox h1 {
 	text-shadow: 1px 2px;
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
