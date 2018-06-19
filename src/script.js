@@ -47,8 +47,11 @@ listener.onmessage = function(event) {
 				} else {	
 					rowElements[input[i][0]].setAttribute("class", "table-success"); 
 				}
+				var diff = price - previousTickerPrice[input[i][0]];
+				diff = Number(diff.toFixed(2));
+				if (diff > 0) diff = '+' + diff;
 				children = rowElements[input[i][0]].childNodes; 
-				children[1].childNodes[0].data = price; 
+				children[1].childNodes[0].data = price + ' (' + diff + ')'; 
 				children[2].setAttribute("data-time", Date.now());
 			} else {
 				var tableBody = document.getElementById("stock");
