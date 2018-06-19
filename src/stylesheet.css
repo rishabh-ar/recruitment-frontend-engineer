@@ -1,4 +1,37 @@
+body {
+	font-family: Arial; 
+}
+
+body::after{
+   background-image: url("background3.jpg");
+   background-color: #cccccc;
+   background-size: 100%;
+}
 
 .customTable {
+	font-weight: bold; 
 	width: 70% !important;
+}
+table:hover {
+	background-color: #0073e6;  
+
+}
+
+div.transbox {
+	margin-top: 3%; 
+	margin-left: 0%;
+	margin-bottom: 2%; 
+	width: 30%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    border-radius: 25px; 
+}
+
+div.transbox h1 {
+	text-shadow: 1px 2px;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }

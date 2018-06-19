@@ -51,9 +51,9 @@ listener.onmessage = function(event) {
 				minTickerPrice[input[i][0]] = Math.min(minTickerPrice[input[i][0]], price);
 
 				if (price < previousTickerPrice[input[i][0]]) {
-					rowElements[input[i][0]].setAttribute("class", "table-danger"); 
+					rowElements[input[i][0]].setAttribute("bgcolor", "e60000"); 
 				} else {	
-					rowElements[input[i][0]].setAttribute("class", "table-success"); 
+					rowElements[input[i][0]].setAttribute("bgcolor", "#00ff00"); 
 				}
 				
 				var diff = price - previousTickerPrice[input[i][0]];
@@ -98,6 +98,7 @@ listener.onmessage = function(event) {
 				tableRow.appendChild(tableData4);
 				tableRow.appendChild(tableData5);
 				tableRow.appendChild(tableData6);
+				tableRow.setAttribute("bgcolor", "#ffffcc"); 
 				tableBody.appendChild(tableRow);
 
 				rowElements[input[i][0]] = tableRow; 
