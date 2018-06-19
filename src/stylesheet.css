@@ -1,8 +1,15 @@
+.background img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  size: 100%;
+}
+
 body {
-   background-image: url("background3.jpg");
-   background-color: Cyan;
-   background-size: 100%;
-   opacity: 0.9;
+  opacity: 0.8;
 }
 
 .customTable {
@@ -10,7 +17,7 @@ body {
 	width: 70% !important;
 }
 
-thead:hover, tr:hover {
+tr:hover {
 	background-color: #000066;
 	color: white;  
 }
